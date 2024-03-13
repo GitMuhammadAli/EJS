@@ -1,0 +1,28 @@
+<%- include('../partials/head') %>
+    <%- include('../partials/header')%>
+
+        <title>
+            <%= title %>
+        </title>
+
+        <body>
+
+            <h1>this is the article</h1>
+
+            <ol>
+                <% article.forEach(article=> { %>
+                    <li>
+                        <h2>
+                            <%= article.title %>
+                        </h2>
+                        <p>
+                            <%= article.body %>
+                        </p>
+                    </li>
+                    <hr>
+                    <% }); %>
+            </ol>
+
+        </body>
+
+        <%- include('../partials/footer')%>
